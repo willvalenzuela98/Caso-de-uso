@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caso de Uso - Reserva de Vuelo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #76b852, #8DC26F);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            background: -webkit-linear-gradient(#76b852, #8DC26F);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-left: 4px solid #0078d4;
+            background-color: #e3f2fd;
+            border-radius: 10px;
+        }
+        ol {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Caso de Uso - Reserva de Vuelo</h1>
+        <div class="section">
+            <h2>1. Título del Caso de Uso</h2>
+            <p>Reserva de Vuelo</p>
+        </div>
+        <div class="section">
+            <h2>2. Actor(es)</h2>
+            <p>Cliente</p>
+        </div>
+        <div class="section">
+            <h2>3. Descripción</h2>
+            <p>Permite al Cliente buscar y reservar vuelos.</p>
+        </div>
+        <div class="section">
+            <h2>4. Precondiciones</h2>
+            <p>El Cliente debe tener una cuenta en el sistema.</p>
+        </div>
+        <div class="section">
+            <h2>5. Flujo Principal de Eventos</h2>
+            <ol>
+                <li>El Cliente inicia sesión en el sistema.</li>
+                <li>El Cliente busca vuelos según sus preferencias (fecha, destino, etc.).</li>
+                <li>El sistema muestra los vuelos disponibles.</li>
+                <li>El Cliente selecciona un vuelo y proporciona los datos necesarios.</li>
+                <li>El Cliente confirma la reserva y realiza el pago.</li>
+                <li>El sistema envía la confirmación de la reserva al Cliente.</li>
+            </ol>
+        </div>
+        <div class="section">
+            <h2>6. Postcondiciones</h2>
+            <p>La reserva se registra correctamente en el sistema.</p>
+        </div>
+        <div class="section">
+            <h2>7. Excepciones</h2>
+            <p>Si el pago falla, se notifica al Cliente y la reserva no se realiza.</p>
+        </div>
+    </div>
+</body>
+</html>
